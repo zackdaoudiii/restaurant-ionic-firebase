@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Signin</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <ion-input placeholder="username" [(ngModel)]="username"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input placeholder="password" type="password" [(ngModel)]="password"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-button (click)="login()">signin</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-left">
+            <ion-card-subtitle >to create new account click here</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+</ion-content>

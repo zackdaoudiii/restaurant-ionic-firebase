@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>UpdateMenuModal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+     <br>
+<!--    {{this.menu.type}}<br>-->
+<!--    {{this.menu.price}}<br>-->
+<!--    {{this.menu.description}}-->
+
+
+    <ion-grid>
+      <ion-card>
+        <ion-card-header>
+          <!--              <ion-card-title> </ion-card-title>-->
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-input  type="text" value="{{this.menu.id}}"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-input placeholder="Name"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-input placeholder="type"></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-input placeholder="price" ></ion-input>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-input placeholder="description"  ></ion-input>
+            </ion-col>
+          </ion-row>
+
+
+
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <ion-button (click)="update()">Update</ion-button>
+            </ion-col>
+          </ion-row>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-grid>
+
+</ion-content>
+
+
